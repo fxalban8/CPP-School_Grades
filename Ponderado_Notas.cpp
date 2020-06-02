@@ -11,7 +11,7 @@ and write your final grade on standard output.
 
 
 int main(){
-	
+	float practical_note, theretical_note, participation;	
 
 
 }
