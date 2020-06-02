@@ -1,5 +1,6 @@
 #include <iostream>
 #include <limits>
+#include <iomanip>
 using namespace std;
 
 /*A student's final grade is the weighted average of three grades:
@@ -41,7 +42,7 @@ int main(){
 	}
 
 	final_grade=practical_note*0.3 + theoretical_note*0.6 + participation*0.1;
-	cout<<"Your final grade is "<<final_grade<<endl;
+	cout<<"Your final grade is "<<setprecision(2)<<fixed<<final_grade<<endl;
 
 
 	return 0;
