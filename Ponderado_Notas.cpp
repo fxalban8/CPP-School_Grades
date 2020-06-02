@@ -1,4 +1,5 @@
 #include <iostream>
+#include <>
 using namespace std;
 
 /* Exercise 7: A student's final grade is the weighted average of three grades:
@@ -12,6 +13,10 @@ and write your final grade on standard output.
 
 int main(){
 	float practical_note, theretical_note, participation;	
-
+	cout<<"Enter the practical_note"<<endl;
+	cin>>practical_note;
+	
+	return 0;
+}
 
 }
