@@ -17,7 +17,7 @@ int main(){
 	cin>>practical_note;
 
 	while(!cin){
-		
+		cin.clear();		
 	}	
 
 	return 0;
