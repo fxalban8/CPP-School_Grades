@@ -16,6 +16,7 @@ void verifying(float& a);
 
 
 int main(){
+	float final_grade;
 	float practical_note, theoretical_note, participation;	
 	cout<<"Enter the practical_note "<<flush;
 	cin>>practical_note;
@@ -38,6 +39,10 @@ int main(){
 	while(!cin||participation<0||participation>10){
 		verifying(participation);
 	}
+
+	final_grade=practical_note*0.3 + theoretical_note*0.6 + participation*0.1;
+	cout<<"Your final grade is "<<final_grade<<endl;
+
 
 	return 0;
 }
