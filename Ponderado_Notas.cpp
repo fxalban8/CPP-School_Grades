@@ -13,12 +13,14 @@ and write your final grade on standard output.
 
 int main(){
 	float practical_note, theretical_note, participation;	
-	cout<<"Enter the practical_note"<<endl;
+	cout<<"Enter the practical_note "<<flush;
 	cin>>practical_note;
 
 	while(!cin){
 		cin.clear();
-		cin.ignore(numeric_limits<streamsize>::max(),'\n');		
+		cin.ignore(numeric_limits<streamsize>::max(),'\n');
+		cout<<"Non-valid input. Enter a float value: "<<flush;
+		cin>>practical_note;		
 	}	
 
 	return 0;
