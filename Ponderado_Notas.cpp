@@ -2,7 +2,7 @@
 #include <>
 using namespace std;
 
-/* Exercise 7: A student's final grade is the weighted average of three grades:
+/*A student's final grade is the weighted average of three grades:
 the practical note that counts 30% of the total,
 the theoretical note that counts 60%
 and the participation note that counts the remaining 10%.
@@ -15,7 +15,11 @@ int main(){
 	float practical_note, theretical_note, participation;	
 	cout<<"Enter the practical_note"<<endl;
 	cin>>practical_note;
-	
+
+	while(!cin){
+		
+	}	
+
 	return 0;
 }
 
