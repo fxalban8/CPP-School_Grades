@@ -1,5 +1,5 @@
 #include <iostream>
-#include <>
+#include <limits>
 using namespace std;
 
 /*A student's final grade is the weighted average of three grades:
@@ -17,10 +17,11 @@ int main(){
 	cin>>practical_note;
 
 	while(!cin){
-		cin.clear();		
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(),'\n');		
 	}	
 
 	return 0;
 }
 
-}
+
