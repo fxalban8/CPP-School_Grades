@@ -10,41 +10,42 @@ Write a program that reads a student's three notes from standard input
 and write your final grade on standard output.
 */
 
+void verifying(float& a);
+
+
+
 
 int main(){
 	float practical_note, theoretical_note, participation;	
 	cout<<"Enter the practical_note "<<flush;
 	cin>>practical_note;
 
-	while(!cin){
-		cin.clear();
-		cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		cout<<"Non-valid input. Enter a float value: "<<flush;
-		cin>>practical_note;		
+	while(!cin||practical_note<0||practical_note>10){
+		verifying(practical_note);
 	}	
 	
 
 	cout<<"Enter the theoretical_note "<<flush;
 	cin>>theoretical_note;
 
-	while(!cin){
-		cin.clear();
-		cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		cout<<"Non-valid input. Enter a float value: "<<flush;
-		cin>>theoretical_note;		
+	while(!cin||theoretical_note<0||theoretical_note>10){
+		verifying(theoretical_note);
 	}
 
 	cout<<"Enter the participation_note "<<flush;
 	cin>>participation;
 
-	while(!cin){
-		cin.clear();
-		cin.ignore(numeric_limits<streamsize>::max(),'\n');
-		cout<<"Non-valid input. Enter a float value: "<<flush;
-		cin>>participation;		
+	while(!cin||participation<0||participation>10){
+		verifying(participation);
 	}
 
 	return 0;
 }
 
 
+void verifying(float& a){
+	cin.clear();
+	cin.ignore(numeric_limits<streamsize>::max(),'\n');
+	cout<<"Non-valid input. Enter a correct value: "<<flush;
+	cin>>a;
+}
